@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.course-goal {
+  width: 100%;
+}
+.course-goal h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+.course-goal > ul {
+  list-style: none;
+  padding: 0;
+}
+.course-goal > ul > li {
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
