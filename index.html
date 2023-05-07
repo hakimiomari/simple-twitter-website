@@ -4,17 +4,744 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="course-goal">
-      <h2>our course goals</h2>
-      <ul>
-        <li>Learn All Course</li>
-        <li>Get new skills</li>
-        <li>Make own projects</li>
-      </ul>
-    </div>
+    <section>
+      <div class="container-md-fluid">
+        <div class="d-inline-flex justify-content-between">
+          <!-- left sidebar -->
+          <div class="parent_div">
+            <div class="pt-3 ms-5 flex-fill first_part">
+              <!-- twitter icon -->
+              <div class="tw mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-twitter"></i></a>
+              </div>
+              <!-- home -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-house pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Home</span></a
+                >
+              </div>
+              <!-- explore -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-hash pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Explore</span></a
+                >
+              </div>
+              <!-- notification -->
+              <div class="mb-3 j_c_s">
+                <a href="3"><i class="icon bi bi-bell-fill pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Notification</span></a
+                >
+              </div>
+              <!-- Messege -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-chat-left-dots pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Messages</span></a
+                >
+              </div>
+              <!-- Bookmark -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-bookmark pe-3"></i></a>
+
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Bookmark</span></a
+                >
+              </div>
+              <!-- Lists -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-card-list pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Lists</span></a
+                >
+              </div>
+              <!-- Porfile -->
+              <div class="mb-3 j_c_s">
+                <a href="#"><i class="icon bi bi-person-circle pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">Profile</span></a
+                >
+              </div>
+              <!-- More -->
+              <div class="mb-4 j_c_s">
+                <a href="#"><i class="icon bi bi-three-dots pe-3"></i></a>
+                <a href="#" class="text-decoration-none"
+                  ><span class="span">More</span></a
+                >
+              </div>
+              <!-- button twitter -->
+              <div class="mb-4 tweet_b_d">
+                <button class="btn btn-info twitter-button">
+                  <span class="twitt">Tweet</span>
+                </button>
+              </div>
+              <!-- profile -->
+              <div class="mb-3 d-flex j_c_s sidebar_profile">
+                <div class="img-class">
+                  <img
+                    src="./images/1.jpg"
+                    class="rounded-circle profile_image"
+                    alt=""
+                  />
+                </div>
+                <div class="profile_name">
+                  <span>Kamranullah Hakimi</span>
+                  <span class="user_name">@HKamranullah</span>
+                </div>
+                <i class="bi bi-three-dots mt-2 ps-1 dot"></i>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+          <!-- end of sidebar -->
+          <!-- mian part start -->
+          <div class="pt-3 second_part flex-fill">
+            <!-- header -->
+            <div
+              class="d-flex justify-content-between px-4 align-items-center sticky_position"
+            >
+              <a href="#" class="fw-bold text-decoration-none lead">Home</a>
+              <a href="#"><i class="bi bi-asterisk"></i></a>
+            </div>
+            <!-- Porfile -->
+            <div class="py-3">
+              <div class="d-flex align-items-center mb-4 px-3 make_post">
+                <img
+                  src="./images/1.jpg"
+                  class="profile_image img-fluid me-3"
+                />
+                <span class="lead mt-2 post_text">What's happing?</span>
+              </div>
+              <div
+                class="d-flex justify-content-between post_here align-items-center pb-3 pe-3 border-bottom border-dark"
+              >
+                <div class="icons ms-sm-5 mt-2">
+                  <a href="#"> <i class="bi bi-image ms-sm-4"></i></a>
+                  <a href="#"><i class="bi bi-gift ms-sm-2"></i></a>
+                  <a href="#"
+                    ><i class="bi bi-file-earmark-bar-graph ms-sm-2"></i
+                  ></a>
+                  <a href="#"><i class="bi bi-emoji-smile ms-sm-2"></i></a>
+                  <a href="#"
+                    ><i class="bi bi-calendar-month-fill ms-sm-2"></i
+                  ></a>
+                  <a href="#"><i class="bi bi-geo-alt ms-sm-2"></i></a>
+                </div>
+                <button class="twitt_btn rounded-pill px-4">Tweet</button>
+              </div>
+            </div>
+            <!-- show tweets -->
+            <div
+              class="show__tweets text-center border-bottom border-dark py-3"
+            >
+              <a href="#" class="text-decoration-none"
+                ><span class="text-info">Show 200 Tweets</span></a
+              >
+            </div>
+            <!-- posts 1 -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/1.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Kamranullah Hakimi</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Hakimi</span>
+                      <span class="user_name pt-1 ps-2">.1hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead">
+                  I am Kamranullah Hakimi a Web Developer with two Decade
+                  Experience.
+                </p>
+                <img src="./images/IMG_9883.JPG" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!---------------- post 2------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/Mosh.png" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Mosh Hamidani</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Mosh</span>
+                      <span class="user_name pt-1 ps-2">.1hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead">
+                  I am Mosh Hamidani a software Developer with two decade
+                  experience.
+                </p>
+                <img src="./images/Mosh.png" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- -------------post 3-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/3.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Stoke</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@stoke</span>
+                      <span class="user_name pt-1 ps-2">.1hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae aperiam debitis deleniti sunt fuga ad. Hic error
+                  maiores quidem voluptas officia, perferendis labore aperiam
+                  deserunt ratione iusto temporibus, quia distinctio.
+                </p>
+                <img src="./images/4.jpg" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- -------------post 4-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/4.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Khan</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@khan</span>
+                      <span class="user_name pt-1 ps-2">.1hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae aperiam debitis deleniti sunt fuga ad. Hic error
+                  maiores quidem voluptas officia, perferendis labore aperiam
+                  deserunt ratione iusto temporibus, quia distinctio.
+                </p>
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- -------------post 5-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/2.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Sterling</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Sterling</span>
+                      <span class="user_name pt-1 ps-2">.2d</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">Look at me☺️☺️☺️</p>
+                <img src="./images/2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- ---------------post 6-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/5.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Steve</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Steve</span>
+                      <span class="user_name pt-1 ps-2">.1d</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae aperiam debitis deleniti sunt fuga ad. Hic error
+                  maiores quidem voluptas officia
+                </p>
+                <img src="./images/5.jpg" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">52</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">2</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">32</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- ---------------post 7-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/8.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Jhon Doe</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Jhon</span>
+                      <span class="user_name pt-1 ps-2">.2hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <img src="./images/8.jpg" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">2</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">40</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">5</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">10</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- ---------------post 8-------------- -->
+            <div class="posts p-3 border-bottom border-dark">
+              <div class="d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/3.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex ps-3 pt-2">
+                    <span>Gull Mohammad</span>
+                    <div class="hover_info d-flex">
+                      <span class="user_name pt-1 ps-2">@Momand</span>
+                      <span class="user_name pt-1 ps-2">.1hr</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <div class="post_content mt-2">
+                <p class="lead pb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae aperiam debitis deleniti sunt fuga ad. Hic error
+                  maiores quidem voluptas officia, perferendis labore aperiam
+                  deserunt ratione iusto temporibus, quia distinctio.
+                </p>
+                <img src="./images/3.jpg" class="img-fluid" alt="" />
+              </div>
+              <div
+                class="post_reaction_icon d-flex justify-content-around mt-5"
+              >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-chat"
+                    ><span class="user_name ps-2">12</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-repeat"
+                    ><span class="user_name ps-2">20</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-heart"
+                    ><span class="user_name ps-2">4</span></i
+                  ></a
+                >
+                <a href="#" class="text-decoration-none"
+                  ><i class="bi bi-upload"
+                    ><span class="user_name ps-2">50</span></i
+                  ></a
+                >
+              </div>
+            </div>
+            <!-- -----------end of post--------------- -->
+            <!-- end -->
+          </div>
+          <!-- end of main part -->
+          <!-- ----------------right sidebar-------------------- -->
+          <div class="right_sidebar flex-fill">
+            <!-- search bar -->
+            <div class="position-sticky bg_div_input top-0 mx-4 pt-2 mb-4">
+              <input
+                type="text"
+                class="form-control input_bg"
+                placeholder="Search Twitter"
+              />
+            </div>
+            <!---------- trends--------- -->
+            <div class="trends mx-4 rounded-3">
+              <h5 class="fw-bold p-3">Trends for You</h5>
+              <!-- 1 -->
+              <div
+                class="follow_profile d-flex px-3 justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">Trending</span>
+                  <span>#Kabul</span>
+                  <span class="trending_span">33.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- 2 -->
+              <div
+                class="follow_profile d-flex px-3 justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">Trending in Afghanistan</span>
+                  <span>#LetUsLive</span>
+                  <span class="trending_span">3.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- 3 -->
+              <div
+                class="follow_profile d-flex justify-content-between px-3 pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">Trending ICC</span>
+                  <span>#Cricket</span>
+                  <span class="trending_span">50.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- 4 -->
+              <div
+                class="follow_profile px-3 d-flex justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">#PinkNewsAwards</span>
+                  <span>#PinkNewsAwards</span>
+                  <span class="trending_span">5.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- --------------------------- -->
+              <!-- 5 -->
+              <div
+                class="follow_profile px-3 d-flex justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">Trending</span>
+                  <span>#Kabul</span>
+                  <span class="trending_span">33.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- 6 -->
+              <div
+                class="follow_profile px-3 d-flex justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">Trending ICC</span>
+                  <span>#Cricket</span>
+                  <span class="trending_span">50.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+              <!-- 7 -->
+              <div
+                class="follow_profile px-3 d-flex justify-content-between pb-2"
+              >
+                <div class="d-flex flex-column mt-3">
+                  <span class="trending_span">#PinkNewsAwards</span>
+                  <span>#PinkNewsAwards</span>
+                  <span class="trending_span">5.4k tweets</span>
+                </div>
+                <a href="#" class="pt-2"
+                  ><i class="trends_icon bi bi-three-dots pe-2"></i
+                ></a>
+              </div>
+            </div>
+            <!-- end of trends -->
+            <!-- ------------Follow start------------ -->
+            <div class="trends follow_position mx-4 mt-4">
+              <h5 class="fw-bolder follow_text ms-3 pt-3">Who to follow</h5>
+              <!-- 1 -->
+              <div class="follow_profile py-3 d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/1.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex flex-column ps-2">
+                    <span>Kamranullah</span>
+                    <span class="user_name">@KHakimi</span>
+                  </div>
+                </div>
+                <button class="px-3 follower_button">follow</button>
+              </div>
+              <!-- 2 -->
+              <div class="follow_profile py-3 d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/Mosh.png" class="profile_image" alt="" />
+                  <div class="infoo d-flex flex-column ps-2">
+                    <span>Mosh</span>
+                    <span class="user_name">@Mosh</span>
+                  </div>
+                </div>
+                <button class="px-3 follower_button">follow</button>
+              </div>
+              <!-- 3 -->
+              <div class="follow_profile py-3 d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/5.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex flex-column ps-2">
+                    <span>Steve</span>
+                    <span class="user_name">@Steve</span>
+                  </div>
+                </div>
+                <button class="px-3 follower_button">follow</button>
+              </div>
+              <!-- 4 -->
+              <div class="follow_profile py-3 d-flex justify-content-between">
+                <div class="profile__info d-flex">
+                  <img src="./images/4.jpg" class="profile_image" alt="" />
+                  <div class="infoo d-flex flex-column ps-2">
+                    <span>Stoke</span>
+                    <span class="user_name">@Stoke</span>
+                  </div>
+                </div>
+                <button class="px-3 follower_button">follow</button>
+              </div>
+              <div class="follow_profile py-3 ps-3">
+                <a href="#" class="text-decoration-none show_more">Show more</a>
+              </div>
+              <!-- end -->
+            </div>
+            <!-- end -->
+            <!----------------- policy-------------- -->
+            <div class="policy d-flex flex-column pt-4 px-4 gap-1">
+              <a class="text-decoration-none" href="#">
+                <span class="user_name"
+                  >Terms of Service Privacy Policy Cookie Policy</span
+                ></a
+              >
+              <a class="text-decoration-none" href="#"
+                ><span class="user_name">Accessibility Ads info More</span></a
+              >
+              <a class="text-decoration-none" href="#"
+                ><span class="user_name">© 2022 Twitter, Inc.</span></a
+              >
+            </div>
+          </div>
+          <!-- end of right bar -->
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

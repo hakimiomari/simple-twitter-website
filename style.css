@@ -1,24 +1,273 @@
-body {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.course-goal {
+body {
+  background: #000;
+  color: #fff;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+.parent_div {
+  width: 24%;
+}
+.first_part {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 0;
   width: 100%;
 }
-.course-goal h2 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
+.icon {
+  font-size: 1.5rem;
 }
-.course-goal > ul {
-  list-style: none;
-  padding: 0;
+.span {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
-.course-goal > ul > li {
+a {
+  color: white;
+}
+.twitter-button {
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 70%;
+  background: #1abcd8;
+}
+.twitt {
   font-size: 1.2rem;
-  font-weight: 550;
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  font-weight: bold;
+  color: #fff;
+}
+.img_class {
+  width: 45px;
+  height: 45px;
+}
+.profile_image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.profile_name {
+  margin-left: 10px;
+}
+span.user_name {
+  font-size: 12px;
+  color: gray;
+}
+span.user_name:hover {
+  color: #fff;
+}
+.sidebar_profile {
+  padding: 2px 8px;
+  width: 80%;
+}
+.sidebar_profile:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+}
+/* ------------------------------------------------second part---------------------------------------------------------------------- */
+.second_part {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: 46%;
+}
+.sticky_position {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+}
+.post_text {
+  color: gray;
+}
+.icons i {
+  font-size: 1.1rem;
+  color: #1abcd8;
+  padding-right: 5px;
+}
+.twitt_btn {
+  background: #0e4d78;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 2px;
+  border: none;
+}
+/* .show__tweets {
+  border-bottom: 0.5px solid gray;
+} */
+/*------------------------------------- third part=----------------------------------------- */
+.right_sidebar {
+  width: 30%;
+}
+.input_bg {
+  background: #202327;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+}
+.bg_div_input {
+  background: #000;
+  padding: 0 0 5px 0;
+}
+.input_bg::placeholder {
+  color: gray;
+  padding: 0 0 0 10px;
+}
+.trends {
+  background: #202327;
+}
+.trending_span {
+  font-size: 12px;
+  color: gray;
+}
+.trends_icon {
+  color: gray;
+}
+.follow_text {
+  letter-spacing: 1.5px;
+}
+.follow_position {
+  position: sticky;
+  top: 70px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.follower_button {
+  color: #fff;
+  background: #1abcd8;
+  border-radius: 30px;
+  border: none;
+  width: 30%;
+  margin-top: 5px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.show_more {
+  color: #1abcd8;
+  font-size: 14px;
+  border-radius: 0 10px 0 10px;
+}
+.hover_trends {
+  background: #202327;
+  transition: background 0.5s;
+}
+.hover_trends:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.follow_profile {
+  /* padding: 10px 15px; */
+  background: #202327;
+  transition: background 0.7s;
+}
+.follow_profile:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+.policy {
+  position: sticky;
+  top: 500px;
+  z-index: 1;
+}
+
+/*-------------------------- responsive---------------------- */
+/* //////////////////------992px-------///////////////// */
+@media (max-width: 992px) {
+  .right_sidebar {
+    display: none;
+  }
+  .second_part {
+    width: 70%;
+    margin-right: 20px;
+  }
+  .parent_div {
+    width: 30%;
+  }
+}
+/* ---------------768px------------------------------ */
+@media (max-width: 768px) {
+  .tw {
+    margin-right: 20px;
+  }
+  .span {
+    display: none;
+  }
+  .second_part {
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .parent_div {
+    width: 20%;
+  }
+
+  .dot {
+    display: none;
+  }
+  .profile_name {
+    display: none;
+  }
+  .d-inline-flex {
+    justify-content: center;
+  }
+  .j_c_s {
+    display: flex;
+    justify-content: center;
+  }
+  .tweet_b_d {
+    display: none;
+  }
+  .make_post {
+    padding: 0;
+  }
+}
+/* -------------576px-------------------------- */
+@media (max-width: 576px) {
+  .parent_div {
+    display: none;
+  }
+  .second_part {
+    margin-right: 0;
+    margin-left: 0;
+    border: none;
+  }
+  .icons {
+    margin-left: 20px;
+  }
+}
+/* ------------400px ------------------------- */
+@media (max-width: 400px) {
+  .infoo {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons {
+    padding-left: 20px;
+  }
+  .icons a i {
+    font-size: 14px;
+  }
+  .twitt_btn {
+    font-size: 12px;
+    padding: 2px;
+    margin-top: 5px;
+  }
+}
+/* ----------------296px---------------- */
+@media (max-width: 296px) {
+  .post_here {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .twitt_btn {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 70%;
+  }
 }
